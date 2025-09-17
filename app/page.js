@@ -315,10 +315,10 @@ function PanchkarmaIntroSection() {
 // UPDATED Therapies Section with Detailed Descriptions
 function TherapiesSection() {
     const therapies = [
-        { name: 'Vamana', img: '/vamana2.jpg', desc: "A controlled emesis therapy to expel excess Kapha dosha, primarily for respiratory and sinus issues." },
-        { name: 'Virechana', img: '/virechana.jpg', desc: "A medicated purgation therapy that cleanses the gastrointestinal tract to eliminate excess Pitta dosha." },
-        { name: 'Basti', img: '/basti.jpg', desc: "A medicated enema, considered the mother of all treatments for its power to balance the Vata dosha." },
-        { name: 'Nasya', img: '/nasya.jpg', desc: "Nasal administration of herbal oils to cleanse and nourish the head, neck, and shoulder regions." },
+        { name: 'Vamana', img: '/vamana3.jpg', desc: "A controlled emesis therapy to expel excess Kapha dosha, primarily for respiratory and sinus issues." },
+        { name: 'Virechana', img: '/virechana4.webp', desc: "A medicated purgation therapy that cleanses the gastrointestinal tract to eliminate excess Pitta dosha." },
+        { name: 'Basti', img: '/basti2.webp', desc: "A medicated enema, considered the mother of all treatments for its power to balance the Vata dosha." },
+        { name: 'Nasya', img: '/nasya3.jpg', desc: "Nasal administration of herbal oils to cleanse and nourish the head, neck, and shoulder regions." },
         { name: 'Raktamokshana', img: '/raktamokshana.jpg', desc: "A traditional blood purification therapy, effective for various skin disorders and chronic infections." },
     ];
     
