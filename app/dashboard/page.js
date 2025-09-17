@@ -23,14 +23,14 @@ const patientData = {
 
 const appointmentsData = {
   upcoming: [
-    { id: 1, name: 'Shirodhara Therapy', date: 'Today, 3:00 PM', doctor: 'Dr. Anjali Verma' },
-    { id: 2, name: 'Nasya Therapy', date: 'Sep 19, 2025, 11:00 AM', doctor: 'Dr. Anjali Verma' },
+    { id: 1, name: 'Nasya Therapy', date: 'Today, 3:00 PM', doctor: 'Dr. Anjali Verma' },
+    { id: 2, name: 'Raktamokshana Therapy', date: 'Sep 19, 2025, 11:00 AM', doctor: 'Dr. Anjali Verma' },
     { id: 3, name: 'Diet Plan Review', date: 'Sep 22, 2025, 4:00 PM', doctor: 'Dr. Rohan Sharma' },
   ],
   past: [
-    { id: 4, name: 'Basti', date: 'Sep 05, 2025', status: 'Completed' },
+    { id: 4, name: 'Basti', date: 'Sep 10, 2025', status: 'Completed' },
     { id: 5, name: 'Virechana', date: 'Sep 08, 2025', status: 'Completed' },
-    { id: 6, name: 'Vamana', date: 'Sep 10, 2025', status: 'Completed' },
+    { id: 6, name: 'Vamana', date: 'Sep 05, 2025', status: 'Completed' },
   ]
 };
 
@@ -169,7 +169,7 @@ function Sidebar({ activeView, setActiveView, isSidebarOpen, setIsSidebarOpen })
 
 function Header({ session, setIsSidebarOpen }) {
   return (
-    <header className="flex justify-between items-center p-6 md:p-8 border-b bg-white">
+    <header className="flex justify-between items-center p-4 md:p-4 border-b bg-white">
       <button onClick={() => setIsSidebarOpen(true)} className="cursor-pointer lg:hidden text-[#1C1917]"><Menu /></button>
       <h2 className="text-lg md:text-2xl font-bold text-[#1C1917]">Dashboard</h2>
       <div className="flex items-center space-x-4 md:space-x-6">
@@ -283,7 +283,7 @@ function ContactDoctorModal({ setShowContactModal }) {
 // --- CARD COMPONENTS ---
 
 function WelcomeCard({ name }) { return <div className="bg-gradient-to-br from-[#16A34A] to-[#15803D] text-white p-6 md:p-8 rounded-2xl shadow-xl flex justify-between items-center"><div><h3 className="text-xl md:text-2xl font-bold">Hello, {name.split(' ')[0]}!</h3><p className="mt-2 text-white/80 max-w-lg text-sm md:text-base">Ready to continue your journey to wellness?</p></div><Link href="/book" className="bg-white/20 hover:bg-white/30 text-white font-semibold py-2 px-4 rounded-full hidden sm:block text-sm">New Booking</Link></div> }
-function NextAppointmentCard() { return <div className="bg-white p-6 rounded-2xl shadow-lg h-full"><h3 className="text-lg font-bold text-[#1C1917]">Next Appointment</h3><div className="mt-4 bg-[#D1FAE5] p-4 rounded-lg"><p className="font-bold text-[#15803D] text-sm">Shirodhara Therapy</p><p className="text-xs text-[#6B7280] mt-1 flex items-center"><Calendar className="h-4 w-4 mr-2" /> Today, 3:00 PM</p></div></div> }
+function NextAppointmentCard() { return <div className="bg-white p-6 rounded-2xl shadow-lg h-full"><h3 className="text-lg font-bold text-[#1C1917]">Next Appointment</h3><div className="mt-4 bg-[#D1FAE5] p-4 rounded-lg"><p className="font-bold text-[#15803D] text-sm">Nasya Therapy</p><p className="text-xs text-[#6B7280] mt-1 flex items-center"><Calendar className="h-4 w-4 mr-2" /> Today, 3:00 PM</p></div></div> }
 function ProgressCard() { const progress = progressData.overallCompletion; return <div className="bg-white p-6 rounded-2xl shadow-lg h-full"><h3 className="text-lg font-bold text-[#1C1917] mb-4">Treatment Progress</h3><div className="flex items-center justify-between text-sm text-[#6B7280] mb-2"><span>Overall Completion</span><span className="font-semibold text-[#15803D]">{progress}%</span></div><div className="w-full bg-gray-200 rounded-full h-2 mb-2"><motion.div className="bg-[#16A34A] h-2 rounded-full" initial={{ width: 0 }} animate={{ width: `${progress}%` }} transition={{ duration: 1, delay: 0.5 }} /></div><p className="text-xs text-center text-[#6B7280]">3 of 5 main therapies completed.</p></div> }
 function QuickActionsCard({ setActiveView, setShowContactModal }) {
   return (

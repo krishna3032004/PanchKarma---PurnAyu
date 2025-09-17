@@ -166,11 +166,13 @@ function Navbar() {
         {/* New Semi-Circle Modern Mobile Menu */}
         <AnimatePresence>
         {isOpen && (
+          <div  className='h-[100vh] w-[100vw] '>
             <motion.div
                 variants={menuVariants}
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
+                
                 // Semi-circle ka size bada kar diya hai
                 className="fixed top-0 right-0 h-[500px] w-[500px] bg-black/80 backdrop-blur-md rounded-bl-full z-[55] origin-top-right"
             >
@@ -206,6 +208,8 @@ function Navbar() {
                     </motion.div>
                 </motion.div>
             </motion.div>
+            <div onClick={() => setIsOpen(false)} className='fixed w-full h-full  top-64'></div>
+            </div>
         )}
         </AnimatePresence>
       {/* {isOpen && (
