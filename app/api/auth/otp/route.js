@@ -2,6 +2,7 @@
 import { NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcryptjs';
+import nodemailer from  'nodemailer';
 
 const prisma = new PrismaClient();
 // Nodemailer Transporter
