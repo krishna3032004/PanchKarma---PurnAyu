@@ -1,0 +1,9 @@
+/* app/dashboard/dashboard.css */
+
+/* Yeh file sirf dashboard ke liye hai */
+body {
+  background-color: #F8FAF9; /* Page ka halka green/gray background */
+  color: #1C1917;      /* Main text color (dark) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
