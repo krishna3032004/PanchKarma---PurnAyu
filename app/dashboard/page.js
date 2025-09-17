@@ -106,7 +106,7 @@ function EmptyDashboard() {
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }}>
                 <Calendar className="h-16 w-16 md:h-20 md:w-20 text-gray-300 mx-auto mb-4"/>
                 <h2 className="text-xl md:text-2xl font-bold">No Appointments Yet</h2>
-                <p className="text-[#6B7280] mt-2 max-w-sm text-sm md:text-base">It looks like you haven't scheduled any therapies. Start your wellness journey today!</p>
+                <p className="text-[#6B7280] mt-2 max-w-sm text-sm md:text-base">It looks like you haven&apos;t scheduled any therapies. Start your wellness journey today!</p>
                 <Link href="/book"><motion.button whileHover={{ scale: 1.05 }} className="mt-6 bg-[#16A34A] text-white font-semibold py-2 px-5 md:py-3 md:px-6 rounded-full flex items-center mx-auto shadow-lg hover:bg-[#15803D]"><PlusCircle className="h-5 w-5 mr-2"/> Book Your First Session</motion.button></Link>
             </motion.div>
         </div>
