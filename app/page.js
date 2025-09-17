@@ -419,7 +419,7 @@ function TestimonialsSection() {
                 <div className="flex text-yellow-400 mb-4">
                   <Star fill="currentColor" /><Star fill="currentColor" /><Star fill="currentColor" /><Star fill="currentColor" /><Star fill="currentColor" />
                 </div>
-                <p className="text-lg italic text-brand-text-light mb-6">"This was a life-changing experience. I feel completely renewed and energetic after the Panchkarma treatment."</p>
+                <p className="text-lg italic text-brand-text-light mb-6">&quot;This was a life-changing experience. I feel completely renewed and energetic after the Panchkarma treatment.&quot;</p>
                 <p className="font-bold text-brand-text">- Anjali Sharma, Mumbai</p>
               </motion.div>
           </div>

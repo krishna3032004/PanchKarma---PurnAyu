@@ -41,7 +41,7 @@ export default function BookingPage() {
                 </li>
                 <li className="flex items-start">
                     <Check className="h-5 w-5 text-brand-green mr-3 mt-1 flex-shrink-0" />
-                    <span className="text-sm md:text-base">You'll receive a complete schedule for your therapies.</span>
+                    <span className="text-sm md:text-base">You&apos;ll receive a complete schedule for your therapies.</span>
                 </li>
             </ul>
         </div>

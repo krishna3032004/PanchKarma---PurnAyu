@@ -4,6 +4,14 @@ import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcryptjs';
 
 const prisma = new PrismaClient();
+// Nodemailer Transporter
+const transporter = nodemailer.createTransport({
+    service: 'gmail', // Hum Gmail use kar rahe hain
+    auth: {
+        user: process.env.EMAIL_SERVER_USER,
+        pass: process.env.EMAIL_SERVER_PASSWORD,
+    },
+});
 
 export async function POST(req) {
   try {
@@ -40,6 +48,15 @@ export async function POST(req) {
     console.log(`\n\nOTP for ${email}: ${otp}\n\n`);
     
     // Yahan production me email bhejne ka code aayega (nodemailer se)
+     // Nodemailer se email bhejne ka code
+    const mailOptions = {
+        from: process.env.EMAIL_FROM,
+        to: email,
+        subject: 'Your Login OTP for Panchkarma',
+        html: `<p>Your One-Time Password is: <strong>${otp}</strong>. It is valid for 10 minutes.</p>`
+    };
+
+    await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ message: 'OTP sent successfully.' }, { status: 200 });
   } catch (error) {
