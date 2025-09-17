@@ -182,13 +182,13 @@ function Navbar() {
                     className="flex flex-col items-start justify-start pt-28 pl-44 space-y-6"
                 >
                     <motion.div variants={linkVariants}>
-                        <Link href="#therapies" onClick={() => setIsOpen(false)} className="text-2xl font-serif text-white hover:text-brand-green transition-colors">Therapies</Link>
+                        <Link href="#therapies" onClick={() => setIsOpen(false)} className="text-lg font-serif text-white hover:text-brand-green transition-colors">Therapies</Link>
                     </motion.div>
                     <motion.div variants={linkVariants}>
-                        <Link href="#doctors" onClick={() => setIsOpen(false)} className="text-2xl font-serif text-white hover:text-brand-green transition-colors">Doctors</Link>
+                        <Link href="#doctors" onClick={() => setIsOpen(false)} className="text-lg font-serif text-white hover:text-brand-green transition-colors">Doctors</Link>
                     </motion.div>
                     <motion.div variants={linkVariants}>
-                        <Link href="#why-us" onClick={() => setIsOpen(false)} className="text-2xl font-serif text-white hover:text-brand-green transition-colors">Why Us</Link>
+                        <Link href="#why-us" onClick={() => setIsOpen(false)} className="text-lg font-serif text-white hover:text-brand-green transition-colors">Why Us</Link>
                     </motion.div>
 
                     <motion.div variants={linkVariants} className="pt-8">
@@ -199,8 +199,8 @@ function Navbar() {
                         </div>
                     ) : (
                         <div className="flex items-center space-x-4">
-                            <Link href="/login" className="text-xl text-brand-green hover:text-brand-green">Login</Link>
-                            <Link href="/book" className="text-xl text-white bg-brand-green px-6 py-2 rounded-full">Book Now</Link>
+                            <Link href="/login" className="text-lg text-brand-green hover:text-brand-green">Login</Link>
+                            <Link href="/book" className="text-lg text-white bg-brand-green px-5 py-1.5 rounded-full">Book Now</Link>
                         </div>
                     )}
                     </motion.div>
