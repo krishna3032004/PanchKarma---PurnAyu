@@ -1,26 +1,22 @@
+/* app/globals.css */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* New, Modern Greenish Theme */
+  --color-brand-green-light: #F0FDF4;  /* Default light green background */
+  --color-brand-green: #22C55E;      /* Bright green for highlights */
+  --color-brand-green-dark: #16A34A; /* Gehra green */
+  --color-brand-green-darkest: #14532D; /* Sabse gehra green */
+  
+  --color-brand-text-light: #52525B; /* Halka text color */
+  --color-brand-text: #18181B;      /* Gehra text color */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Alag sections ke liye background colors */
+  --color-bg-white: #FFFFFF;
+  --color-bg-light-gray: #FAFAF9;
+  --color-bg-light-leaf: #F0FDF4;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* color: var(--color-brand-text); Pehle se set hai */
 }
