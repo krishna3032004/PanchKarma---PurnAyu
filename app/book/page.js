@@ -48,7 +48,7 @@ export default function BookingPage() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a 
-              href="https://t.me/YourTelegramBotUsername" // Yahan apne Telegram bot ka link daalein
+              href="https://t.me/Panchkarma_bot" // Yahan apne Telegram bot ka link daalein
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
